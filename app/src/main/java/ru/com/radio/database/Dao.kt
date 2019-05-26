@@ -1,0 +1,23 @@
+package ru.com.radio.database
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import io.reactivex.Observable
+import ru.com.radio.models.StationModel
+
+@Dao
+interface StationModelDao {
+    @Query("SELECT * FROM stations")
+    fun getAllStations(): List<StationModel>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun addStations(stations: List<StationModel>)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun addStation(station: StationModel)
+
+    @Query("SELECT * FROM stations WHERE recent=1")
+    fun getRecentStations(): Observable<List<StationModel>>
+}

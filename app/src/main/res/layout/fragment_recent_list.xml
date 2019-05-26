@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <variable name="viewModel" type="ru.pe4encka.radio.viewmodel.MainViewModel"/>
+        <variable name="viewModel" type="ru.com.radio.viewmodel.MainViewModel"/>
     </data>
 
     <FrameLayout

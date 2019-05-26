@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="ru.pe4encka.radio">
+          package="ru.com.radio">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application
-            android:name=".App"
+            android:name="ru.com.radio.App"
             android:allowBackup="true"
             android:icon="@drawable/ic_radio"
             android:label="@string/app_name"
@@ -15,7 +15,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.MainActivity"
+        <activity android:name="ru.com.radio.ui.MainActivity"
                   android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -24,7 +24,7 @@
         </activity>
 
         <service
-                android:name=".service.RadioService"
+                android:name="ru.com.radio.service.RadioService"
                 android:enabled="true"
                 android:exported="false">
         </service>

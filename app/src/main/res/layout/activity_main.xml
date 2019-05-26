@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <variable name="viewModel" type="ru.pe4encka.radio.viewmodel.MainViewModel"/>
+        <variable name="viewModel" type="ru.com.radio.viewmodel.MainViewModel"/>
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -69,7 +69,7 @@
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-                app:layout_behavior="ru.pe4encka.radio.adapters.BottomNavigationBehavior"
+                app:layout_behavior="ru.com.radio.adapters.BottomNavigationBehavior"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
